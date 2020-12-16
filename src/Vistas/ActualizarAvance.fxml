@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="657.0" prefWidth="840.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.RegistrarAvanceController">
+   <children>
+      <TextField fx:id="txfNRC" layoutX="36.0" layoutY="61.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="33.0" layoutY="44.0" text="Clave NRC:" />
+      <TextField fx:id="txfEE" layoutX="36.0" layoutY="115.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="33.0" layoutY="98.0" text="E.E.:" />
+      <Label layoutX="33.0" layoutY="151.0" text="P.E.:" />
+      <TextField fx:id="txfPE" layoutX="36.0" layoutY="169.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="33.0" layoutY="200.0" text="Bloque:" />
+      <TextField fx:id="txfBloque" layoutX="36.0" layoutY="217.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="32.0" layoutY="252.0" text="Sección:" />
+      <TextField fx:id="txfSeccion" layoutX="36.0" layoutY="270.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="31.0" layoutY="300.0" text="Académico:" />
+      <TextField fx:id="txfAcademico" layoutX="36.0" layoutY="317.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="31.0" layoutY="354.0" text="Periodo:" />
+      <TextField fx:id="txfPeriodo" layoutX="36.0" layoutY="370.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="32.0" layoutY="403.0" text="Objetivo general:" />
+      <TextField fx:id="txfObjetivo" layoutX="36.0" layoutY="420.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="235.0" layoutY="44.0" text="Unidad:" />
+      <TextField fx:id="txfUnidad" layoutX="235.0" layoutY="61.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="437.0" layoutY="44.0" text="Tema desarrollado:" />
+      <TextField fx:id="txfTemaDesarrollado" layoutX="437.0" layoutY="61.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="437.0" layoutY="98.0" text="Fecha:" />
+      <DatePicker fx:id="datepFecha" layoutX="438.0" layoutY="115.0" />
+      <Label layoutX="631.0" layoutY="44.0" text="Tareas y prácticas" />
+      <TextArea fx:id="txaTareasYPracticas" layoutX="631.0" layoutY="59.0" prefHeight="78.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="231.0" layoutY="98.0" text="Técnica didáctica:" />
+      <TextField fx:id="txfTecnicaDidactica" layoutX="235.0" layoutY="115.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <TableView fx:id="tablevTemas" layoutX="250.0" layoutY="194.0" prefHeight="176.0" prefWidth="549.0" style="-fx-background-color: #E9EBEE;">
+         <columns>
+            <TableColumn prefWidth="47.0" text="Unidad" />
+            <TableColumn prefWidth="124.0" text="Tema desarrollado" />
+            <TableColumn prefWidth="56.0" text="Fecha" />
+            <TableColumn minWidth="0.0" prefWidth="207.0" text="Tareas y prácticas realizadas" />
+            <TableColumn minWidth="0.0" prefWidth="114.0" text="Técnica didáctica" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAñadirTemaDesarrollado" layoutX="450.0" layoutY="156.0" mnemonicParsing="false" style="-fx-background-color: #5ADE65;" text="Añadir tema desarrollado" />
+      <Button fx:id="btnEliminarElemento" layoutX="44.0" layoutY="513.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="115.0" style="-fx-background-color: F16D55;" text="Eliminar elemento" />
+      <Label layoutX="235.0" layoutY="379.0" text="Unidad:" />
+      <TextField fx:id="txfUnidad2" layoutX="231.0" layoutY="399.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="426.0" layoutY="379.0" text="Porcentaje de avance:" />
+      <TextField fx:id="txfPorcentajeAvance" layoutX="426.0" layoutY="399.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="620.0" layoutY="379.0" text="Observaciones:" />
+      <TextField fx:id="txfObservaciones" layoutX="620.0" layoutY="399.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <TableView fx:id="tablevProgreso" layoutX="251.0" layoutY="487.0" prefHeight="109.0" prefWidth="549.0" style="-fx-background-color: #E9EBEE;">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Unidad" />
+            <TableColumn prefWidth="82.0" text="\% de Avance" />
+            <TableColumn prefWidth="179.0" text="Observaciones" />
+         </columns>
+      </TableView>
+      <Button layoutX="451.0" layoutY="445.0" mnemonicParsing="false" style="-fx-background-color: #5ADE65;" text="Añadir avance de unidad" />
+      <Button fx:id="btnActualizarAvance" layoutX="375.0" layoutY="620.0" mnemonicParsing="false" style="-fx-background-color: #27B232;" text="Actualizar avance" textFill="WHITE" />
+      <Button fx:id="btnSalir" layoutX="737.0" layoutY="620.0" mnemonicParsing="false" text="Cancelar" />
+      <Label layoutX="329.0" layoutY="14.0" text="Actualizar avance programático">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="571.0" text="Elimina un elemento de una tabla">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VisualizarMinutaController">
+   <children>
+      <Label layoutX="169.0" layoutY="14.0" text="Minuta de Reunión Académica (GA-GE-F-01)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="50.0" text="Carrera:" />
+      <Label layoutX="232.0" layoutY="50.0" text="Academia:" />
+      <Label layoutX="336.0" layoutY="100.0" text="Coordinador:" />
+      <Label layoutX="32.0" layoutY="100.0" text="Hora:" />
+      <Label layoutX="200.0" layoutY="100.0" text="Periodo:" />
+      <Label layoutX="445.0" layoutY="50.0" text="Fecha:" />
+      <Label layoutX="30.0" layoutY="151.0" text="Lugar:" />
+      <TextField fx:id="txf_Carrera" editable="false" layoutX="32.0" layoutY="67.0" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txf_Academia" editable="false" layoutX="234.0" layoutY="67.0" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txf_Coordinador" editable="false" layoutX="336.0" layoutY="117.0" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txf_Hora" editable="false" layoutX="32.0" layoutY="117.0" prefHeight="20.0" prefWidth="149.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txf_Periodo" editable="false" layoutX="200.0" layoutY="117.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txf_Fecha" editable="false" layoutX="446.0" layoutY="67.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txf_Lugar" editable="false" layoutX="32.0" layoutY="168.0" prefHeight="20.0" prefWidth="149.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="202.0" layoutY="151.0" text="Objetivo:" />
+      <TextField fx:id="txf_Objetivo" editable="false" layoutX="200.0" layoutY="168.0" prefHeight="25.0" prefWidth="366.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="35.0" layoutY="214.0" text="Asuntos a tratar:" />
+      <ListView fx:id="listv_Asuntos" layoutX="35.0" layoutY="231.0" prefHeight="174.0" prefWidth="200.0" style="-fx-background-color: #E9EBEE;" />
+      <ListView fx:id="listv_Participantes" layoutX="258.0" layoutY="231.0" prefHeight="174.0" prefWidth="268.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="258.0" layoutY="214.0" text="Participantes:" />
+      <ScrollBar layoutX="526.0" layoutY="231.0" orientation="VERTICAL" prefHeight="174.0" prefWidth="14.0" />
+      <Button fx:id="btn_Cerrar" layoutX="268.0" layoutY="423.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Cerrar" />
+   </children>
+</AnchorPane>

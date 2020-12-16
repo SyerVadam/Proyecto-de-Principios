@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="676.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ActualizarMinutaController">
+   <children>
+      <Label layoutX="292.0" layoutY="14.0" text="Actualizar minuta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="51.0" text="Objetivo:" />
+      <TextField fx:id="txfObjetivo" layoutX="35.0" layoutY="68.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="35.0" layoutY="103.0" text="Carrera:" />
+      <TextField fx:id="txfCarrera" layoutX="35.0" layoutY="120.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="35.0" layoutY="158.0" text="Academia:" />
+      <TextField fx:id="txfAcademia" layoutX="35.0" layoutY="175.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="35.0" layoutY="209.0" text="Coordinador:" />
+      <TextField fx:id="txfCoordinador" layoutX="35.0" layoutY="226.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="35.0" layoutY="258.0" text="Hora:" />
+      <TextField fx:id="txfHora" layoutX="35.0" layoutY="275.0" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="115.0" layoutY="258.0" text="Fecha:" />
+      <DatePicker fx:id="datep_Fecha" layoutX="115.0" layoutY="275.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="33.0" layoutY="315.0" text="Lugar:" />
+      <TextField fx:id="txfLugar" layoutX="35.0" layoutY="332.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfPeriodo" layoutX="35.0" layoutY="388.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="34.0" layoutY="371.0" text="Periodo:" />
+      <ListView fx:id="listvParticipantes" layoutX="259.0" layoutY="68.0" prefHeight="165.0" prefWidth="252.0" style="-fx-background-color: #E9EBEE;" />
+      <Label layoutX="259.0" layoutY="51.0" text="Participantes:" />
+      <Button fx:id="btnAgregarAsunto" layoutX="516.0" layoutY="275.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #5ADE65;" text="Agregar asunto" />
+      <ListView fx:id="listvAsuntos" layoutX="259.0" layoutY="272.0" prefHeight="112.0" prefWidth="234.0" style="-fx-background-color: #E9EBEE;" />
+      <Button fx:id="btnAgregarParticipante" layoutX="524.0" layoutY="68.0" mnemonicParsing="false" style="-fx-background-color: #5ADE65;" text="Agregar participante" />
+      <Label layoutX="259.0" layoutY="256.0" text="Asuntos a tratar:" />
+      <Button fx:id="btnActualizar" layoutX="289.0" layoutY="427.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #27B232;" text="Actualizar" textFill="WHITE" />
+      <Button fx:id="btnCancelar" layoutX="570.0" layoutY="427.0" mnemonicParsing="false" text="Cancelar" />
+      <Button fx:id="btnEliminarParticipante" layoutX="524.0" layoutY="108.0" mnemonicParsing="false" style="-fx-background-color: #F16D55;" text="Eliminar participante" />
+      <Button fx:id="btnRemoverAsunto" layoutX="516.0" layoutY="316.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #F16D55;" text="Remover asunto" />
+   </children>
+</AnchorPane>

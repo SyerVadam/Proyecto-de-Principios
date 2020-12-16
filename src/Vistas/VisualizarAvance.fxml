@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="770.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VerAvancesController">
+   <children>
+      <Label layoutX="288.0" layoutY="25.0" text="Visualizar Avance Programático">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="45.0" text="Clave NRC:" />
+      <Label layoutX="39.0" layoutY="96.0" prefHeight="17.0" prefWidth="18.0" text="E.E." />
+      <Label layoutX="39.0" layoutY="146.0" text="P.E." />
+      <Label layoutX="37.0" layoutY="201.0" text="Bloque:" />
+      <Label layoutX="35.0" layoutY="261.0" text="Sección:" />
+      <Label layoutX="37.0" layoutY="312.0" text="Académico:" />
+      <Label layoutX="35.0" layoutY="368.0" text="Periodo:" />
+      <Label layoutX="39.0" layoutY="436.0" text="Objetivo general:" />
+      <TextField fx:id="txfClaveNRC" layoutX="37.0" layoutY="62.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfEE" layoutX="37.0" layoutY="112.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfPE" layoutX="37.0" layoutY="163.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfBloque" layoutX="37.0" layoutY="219.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfSeccion" layoutX="37.0" layoutY="276.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfAcademico" layoutX="37.0" layoutY="329.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfPeriodo" layoutX="37.0" layoutY="385.0" style="-fx-background-color: #E9EBEE;" />
+      <TextField fx:id="txfObjetivo" layoutX="37.0" layoutY="456.0" prefHeight="25.0" prefWidth="362.0" style="-fx-background-color: #E9EBEE;" />
+      <TableView fx:id="tablevTemas" layoutX="214.0" layoutY="76.0" prefHeight="176.0" prefWidth="521.0" style="-fx-background-color: #E9EBEE;">
+         <columns>
+            <TableColumn prefWidth="47.0" text="Unidad" />
+            <TableColumn prefWidth="124.0" text="Tema desarrollado" />
+            <TableColumn prefWidth="56.0" text="Fecha" />
+            <TableColumn minWidth="0.0" prefWidth="171.0" text="Tareas y prácticas realizadas" />
+            <TableColumn minWidth="0.0" prefWidth="122.0" text="Técnica didáctica" />
+         </columns>
+      </TableView>
+      <Label layoutX="214.0" layoutY="54.0" text="Planeación:" />
+      <TableView fx:id="tablevProgreso" layoutX="214.0" layoutY="281.0" prefHeight="147.0" prefWidth="337.0" style="-fx-background-color: #E9EBEE;">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Unidad" />
+            <TableColumn prefWidth="82.0" text="\% de Avance" />
+            <TableColumn prefWidth="179.0" text="Observaciones" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnActualizarAvance" layoutX="592.0" layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #F4C532;" text="Actualizar avance" />
+      <Button fx:id="btnEliminarAvance" layoutX="592.0" layoutY="385.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #F04C2E;" text="Eliminar avance" />
+      <Button fx:id="btnRegresar" layoutX="646.0" layoutY="456.0" mnemonicParsing="false" text="Regresar" />
+      <Label layoutX="214.0" layoutY="261.0" text="Progreso:" />
+   </children>
+</AnchorPane>
